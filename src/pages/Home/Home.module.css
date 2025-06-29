@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFF5E1;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+/* Loading and Error States */
+.loadingContainer,
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  padding: 40px 20px;
+  background-color: #FFF5E1;
+}
+
+.loading {
+  color: #EA671C;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.loading::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(234, 103, 28, 0.2);
+  border-top: 2px solid #EA671C;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  background: rgba(211, 47, 47, 0.1);
+  border-radius: 15px;
+  border: 3px solid rgba(255, 210, 189, 0.70);
+}
+
+/* Search Results Header */
+.searchResultsHeader {
+  background-color: #FFF5E1;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(234, 103, 28, 0.1);
+}
+
+.searchInfo {
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  border: 3px solid rgba(255, 210, 189, 0.70);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.searchInfo h2 {
+  color: #EA671C;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.searchInfo p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.searchStats {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.searchStat {
+  background: linear-gradient(135deg, rgba(234, 103, 28, 0.1), rgba(210, 93, 24, 0.1));
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #EA671C;
+  border: 2px solid rgba(255, 210, 189, 0.70);
+}
+
+.clearSearchButton {
+  background: linear-gradient(135deg, #EA671C 0%, #d25d18 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.clearSearchButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.clearSearchButton:hover::before {
+  left: 100%;
+}
+
+.clearSearchButton:hover {
+  background: linear-gradient(135deg, #d25d18 0%, #b84d14 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(234, 103, 28, 0.3);
+}
+
+/* No Search Results */
+.noSearchResults {
+  background-color: #FFF5E1;
+  padding: 60px 0;
+}
+
+.noResultsContent {
+  text-align: center;
+  background: #fff;
+  padding: 50px 30px;
+  border-radius: 15px;
+  border: 3px solid rgba(255, 210, 189, 0.70);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.noResultsIcon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.noResultsContent h3 {
+  color: #EA671C;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.noResultsContent p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.showAllButton {
+  background: linear-gradient(135deg, #EA671C 0%, #d25d18 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.showAllButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.showAllButton:hover::before {
+  left: 100%;
+}
+
+.showAllButton:hover {
+  background: linear-gradient(135deg, #d25d18 0%, #b84d14 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(234, 103, 28, 0.3);
+}
+
+/* Responsive Design */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    padding: 0 40px;
+  }
+  
+  .searchInfo {
+    padding: 25px;
+  }
+  
+  .searchInfo h2 {
+    font-size: 28px;
+  }
+  
+  .noResultsContent {
+    padding: 40px 25px;
+  }
+  
+  .noResultsContent h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .searchResultsHeader {
+    padding: 30px 0;
+  }
+  
+  .searchInfo {
+    padding: 20px 15px;
+    margin: 0 15px;
+  }
+  
+  .searchInfo h2 {
+    font-size: 24px;
+  }
+  
+  .searchInfo p {
+    font-size: 14px;
+  }
+  
+  .searchStats {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .searchStat {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  .clearSearchButton {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  
+  .noSearchResults {
+    padding: 40px 0;
+  }
+  
+  .noResultsContent {
+    padding: 30px 20px;
+    margin: 0 15px;
+  }
+  
+  .noResultsIcon {
+    font-size: 48px;
+  }
+  
+  .noResultsContent h3 {
+    font-size: 20px;
+  }
+  
+  .noResultsContent p {
+    font-size: 14px;
+  }
+  
+  .showAllButton {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .searchInfo {
+    padding: 15px 10px;
+  }
+  
+  .searchInfo h2 {
+    font-size: 20px;
+  }
+  
+  .searchInfo p {
+    font-size: 13px;
+  }
+  
+  .clearSearchButton {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+  
+  .noResultsContent {
+    padding: 25px 15px;
+  }
+  
+  .noResultsContent h3 {
+    font-size: 18px;
+  }
+  
+  .noResultsContent p {
+    font-size: 13px;
+  }
+  
+  .showAllButton {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .searchInfo h2 {
+    font-size: 18px;
+  }
+  
+  .searchInfo p {
+    font-size: 12px;
+  }
+}

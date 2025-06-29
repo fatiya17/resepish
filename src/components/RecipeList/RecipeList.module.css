@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #EA671C;
+}
+
+.contentResep {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 0px;
+  background-color: #fff5e2;
+  padding: 80px 40px;
+}
+
+.titleResep {
+  font-weight: 600;
+  color: #ea671b;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.recipeCardContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.recipeCardContainer::-webkit-scrollbar {
+  height: 8px;
+}
+
+.recipeCardContainer::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .titleResep {
+    font-size: 38px;
+  }
+
+  .recipeCardContainer {
+    gap: 30px;
+    margin: 0 -20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contentResep {
+    padding: 40px 0px;
+  }
+
+  .titleResep {
+    font-size: 32px;
+  }
+
+  .recipeCardContainer {
+    gap: 20px;
+  }
+}

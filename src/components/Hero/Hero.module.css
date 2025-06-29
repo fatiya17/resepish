@@ -1,0 +1,284 @@
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 120px;
+  max-width: 100%;
+  background-color: #FFF5E1;
+  width: 100vw; 
+  height: 100vh; 
+  overflow-x: hidden; 
+}
+
+.sectionContent {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: 600;
+  color: #EA671C;
+  margin-bottom: 25px;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+.heroDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #000000;
+}
+
+.leftSide {
+  max-width: 50%;
+}
+
+.rightSide {
+  max-width: 50%;
+}
+
+.heroImageWrapper {
+  max-width: 100%;
+  justify-content: flex-end;
+  display: flex;
+  padding-left: 100px;
+  position: relative;
+}
+
+.heroImage {
+  width: 430px;
+  height: auto;
+  filter: drop-shadow(0 10px 30px rgba(234, 103, 28, 0.15));
+  transition: transform 0.3s ease;
+}
+
+.heroImage:hover {
+  transform: scale(1.05);
+}
+
+.searchBar {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  width: 468px;
+  height: 52px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 15px;
+  border: 3px solid rgba(255, 210, 189, 0.70);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.searchBar:hover {
+  border-color: rgba(234, 103, 28, 0.5);
+  box-shadow: 0 4px 15px rgba(234, 103, 28, 0.1);
+  transform: translateY(-2px);
+}
+
+.searchBar:focus-within {
+  border-color: #EA671C;
+  box-shadow: 0 0 0 3px rgba(234, 103, 28, 0.1);
+}
+
+.searchBar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #333;
+  background: transparent;
+}
+
+.searchBar input::placeholder {
+  color: #888;
+}
+
+.searchBar button {
+  background: linear-gradient(135deg, #EA671C 0%, #d25d18 100%);
+  color: white;
+  border: none;
+  padding: 0 20px;
+  height: 100%;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.searchBar button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.searchBar button:hover::before {
+  left: 100%;
+}
+
+.searchBar button:hover {
+  background: linear-gradient(135deg, #d25d18 0%, #b84d14 100%);
+}
+
+.searchBar button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (min-width: 1200px) {
+  .heroSection {
+    padding: 30px 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .heroSection {
+    padding: 30px 40px;
+  }
+
+  .leftSide,
+  .rightSide {
+    max-width: 50%;
+    text-align: left;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .searchBar {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .heroImageWrapper {
+    justify-content: flex-end;
+    padding-left: 50px;
+  }
+
+  .heroImage {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .heroSection {
+    padding: 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .heroDetails {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .leftSide,
+  .rightSide {
+    max-width: 100%;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .searchBar {
+    width: 100%;
+    max-width: 350px;
+    height: 48px;
+    margin: 35px auto 0 auto;
+  }
+  
+  .searchBar input {
+    font-size: 13px;
+    padding: 0 15px;
+  }
+  
+  .searchBar button {
+    font-size: 13px;
+    padding: 0 15px;
+  }
+
+  .heroImageWrapper {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .heroImage {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 15px;
+  }
+  
+  .description {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  .searchBar {
+    height: 45px;
+    max-width: 100%;
+    margin: 25px auto 0 auto;
+  }
+  
+  .searchBar input {
+    font-size: 12px;
+    padding: 0 12px;
+  }
+  
+  .searchBar button {
+    font-size: 12px;
+    padding: 0 12px;
+  }
+
+  .heroImage {
+    width: 220px;
+  }
+}
+
+@media (max-width: 375px) {
+  .heroSection {
+    padding: 10px;
+  }
+  
+  .description {
+    font-size: 12px;
+  }
+
+  .searchBar {
+    height: 42px;
+    margin: 25px auto 0 auto;
+  }
+
+  .heroImage {
+    width: 180px;
+  }
+}

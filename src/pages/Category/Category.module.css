@@ -1,0 +1,52 @@
+.category {
+  min-height: 100vh;
+  padding: 2rem 0;
+  background-color: #fff5e2;
+  margin: 0;
+}
+
+.container {
+  max-width: 100%; 
+  margin: 0 auto;
+  padding: 0 2rem; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.category h1 {
+  text-align: center;
+  color: #EA671C;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.category p {
+  text-align: center;
+  color: #666;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .category h1 {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  
+  .category h1 {
+    font-size: 28px;
+  }
+}
