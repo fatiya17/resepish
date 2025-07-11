@@ -1,12 +1,111 @@
-# React + Vite
+# 🥘 Resepish – Aplikasi Web Resep Masakan Interaktif
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Resepish** adalah aplikasi web interaktif yang memudahkan pengguna dalam mencari, menjelajahi, dan menambahkan resep masakan dari berbagai kategori seperti **Makanan Berat, Dessert, Minuman, dan Cemilan**. Aplikasi ini dirancang dengan antarmuka yang bersih, responsif, dan modern menggunakan ReactJS, serta tersambung ke backend Supabase untuk pengelolaan data.
 
-Currently, two official plugins are available:
+## 🚀 Fitur Utama
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📂 Menampilkan daftar resep berdasarkan kategori.
+- 🔍 Pencarian resep secara real-time (berdasarkan judul).
+- 📝 Form interaktif untuk menambahkan resep baru.
+- 🖼️ Preview gambar resep sebelum diunggah.
+- 🧮 Statistik ringkas jumlah total resep, kategori, dan terpopuler.
+- 📱 Responsive: mendukung layout Desktop, Tablet, dan Mobile.
+- 🔁 Integrasi langsung dengan database Supabase (CRUD).
 
-## Expanding the ESLint configuration
+## 🛠️ Teknologi yang Digunakan
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React.js (v18.2.0)
+- **Build Tool**: Vite
+- **State Management**: React Context API & Hooks
+- **Styling**: CSS Modules + Global CSS
+- **Routing**: react-router-dom
+- **Database & API**: Supabase (PostgreSQL)
+- **Icons**: react-icons
+- **Font**: Google Fonts (Poppins)
+
+## 📂 Struktur Folder
+
+```bash
+Resepish/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── AddRecipeForm/
+│   │   ├── Footer/
+│   │   ├── Hero/
+│   │   ├── Navbar/
+│   │   ├── RecipeCard/
+│   │   ├── RecipeList/
+│   │   ├── Summary/
+│   ├── context/
+│   │   └── RecipeProvider.jsx
+│   ├── hooks/
+│   │   ├── useRecipes.js
+│   │   └── useCategory.js
+│   ├── layout/
+│   │   ├── Navbar.jsx
+│   │   └── Footer.jsx
+│   ├── lib/
+│   │   └── supabase.js
+│   ├── pages/
+│   │   ├── Home/
+│   │   ├── AddRecipe/
+│   │   ├── Category/
+│   │   ├── RecipeDetail/
+│   │   └── Search/
+│   ├── services/
+│   │   └── recipeService.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.html
+```
+
+## 📸 Tampilan Aplikasi
+
+### 🏠 Halaman Beranda  
+Menampilkan hero, statistik resep, dan daftar resep utama.  
+![Home Page](Resepish/screenshot/home-page.png)
+
+### 🔍 Hasil Pencarian  
+Menampilkan hasil resep berdasarkan kata kunci secara real-time.  
+![Hasil Pencarian](Resepish/screenshot/hasil-pencarian.png)
+
+### 📝 Form Tambah Resep  
+Formulir untuk menambahkan resep baru ke dalam database.  
+![Form Tambah Resep](Resepish/screenshot/form-tambah-resep.png)
+
+### 🍲 Detail Resep  
+Menampilkan detail resep secara lengkap berdasarkan ID resep.  
+![Detail Resep](Resepish/screenshot/detail-page.png)
+
+### 🍛 Kategori: Makanan Berat  
+![Makanan Berat](Resepish/screenshot/kategori-makanan-berat.png)
+
+### 🍮 Kategori: Dessert  
+![Dessert](Resepish/screenshot/kategori-dessert.png)
+
+### 🥤 Kategori: Minuman  
+![Minuman](Resepish/screenshot/kategori-minuman.png)
+
+### 🍳 Kategori: Sarapan  
+![Sarapan](Resepish/screenshot/kategori-sarapan.png)
+
+
+## 🧪 Status Pengembangan
+| Fitur               | Status | Keterangan                                                  |
+|---------------------|--------|-------------------------------------------------------------|
+| 🔍 Pencarian        | ✅    | Sudah berjalan real-time berbasis keyword                   |
+| 📋 Detail Resep     | ✅    | Menampilkan semua informasi lengkap dari Supabase           |
+| 🧾 Tambah Resep     | ✅    | Upload + preview + menyimpan ke database secara realtime    |
+| 🛡️ Validasi Form    | ✅    | Validasi dasar tersedia, namun belum semua bersifat wajib   |
+
+## 👩‍💻 Tentang Pengembang
+
+Proyek ini dikembangkan untuk memenuhi Ujian Akhir Semester (UAS) mata kuliah **Pemrograman Frontend**.
+
+**Pengembang**:  
+🧑‍💻 *Fatiya Labibah*  
+🎓 *NIM 0110223060*  
+🏫 *STT Terpadu Nurul Fikri*  
+📅 *Tahun Akademik 2025*
