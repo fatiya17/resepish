@@ -26,7 +26,7 @@
 ## 📂 Struktur Folder
 
 ```bash
-Resepish/
+
 ├── public/
 ├── src/
 │   ├── assets/
@@ -65,31 +65,31 @@ Resepish/
 
 ### 🏠 Halaman Beranda  
 Menampilkan hero, statistik resep, dan daftar resep utama.  
-![Home Page](Resepish/screenshot/home-page.png)
+![Home Page](screenshot/home-page.png)
 
 ### 🔍 Hasil Pencarian  
 Menampilkan hasil resep berdasarkan kata kunci secara real-time.  
-![Hasil Pencarian](Resepish/screenshot/hasil-pencarian.png)
+![Hasil Pencarian](screenshot/hasil-pencarian.png)
 
 ### 📝 Form Tambah Resep  
 Formulir untuk menambahkan resep baru ke dalam database.  
-![Form Tambah Resep](Resepish/screenshot/form-tambah-resep.png)
+![Form Tambah Resep](screenshot/form-tambah-resep.png)
 
 ### 🍲 Detail Resep  
 Menampilkan detail resep secara lengkap berdasarkan ID resep.  
-![Detail Resep](Resepish/screenshot/detail-page.png)
+![Detail Resep](screenshot/detail-page.png)
 
 ### 🍛 Kategori: Makanan Berat  
-![Makanan Berat](Resepish/screenshot/kategori-makanan-berat.png)
+![Makanan Berat](screenshot/kategori-makanan-berat.png)
 
 ### 🍮 Kategori: Dessert  
-![Dessert](Resepish/screenshot/kategori-dessert.png)
+![Dessert](screenshot/kategori-dessert.png)
 
 ### 🥤 Kategori: Minuman  
-![Minuman](Resepish/screenshot/kategori-minuman.png)
+![Minuman](screenshot/kategori-minuman.png)
 
 ### 🍳 Kategori: Sarapan  
-![Sarapan](Resepish/screenshot/kategori-sarapan.png)
+![Sarapan](screenshot/kategori-sarapan.png)
 
 
 ## 🧪 Status Pengembangan
