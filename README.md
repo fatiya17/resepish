@@ -91,19 +91,20 @@ Menampilkan detail resep secara lengkap berdasarkan ID resep.
 ### 🍳 Kategori: Sarapan  
 ![Sarapan](screenshot/kategori-sarapan.png)
 
-
 ## 🧪 Status Pengembangan
 | Fitur               | Status | Keterangan                                                  |
 |---------------------|--------|-------------------------------------------------------------|
-| 🔍 Filter           | ✅    | Sudah berjalan real-time berbasis keyword                   |
-| ✏️ Edit Tugas       | ✅    | Edit teks dan tanggal tugas                                 |
-| ➕ Tambah Tugas     | ✅    | Upload + preview + menyimpan ke database secara realtime    |
-| 🛡️ Validasi Form    | ✅    | Validasi dasar tersedia, namun belum semua bersifat wajib   |
+| 🔍 Pencarian        | ✅    | Filter by status (All, Done, Ongoing, Pending               |
+| 📋 Detail Resep     | ✅    | Menampilkan semua informasi lengkap dari Supabase           |
+| 🧾 Tambah Resep     | ✅    | Form dengan input, tanggal, dan validasi sederhana          |
+| 🧾 UI Responsif     | ✅    | Tampilan optimal di mobile dan desktop                      |
 
 ## 👩‍💻 Tentang Pengembang
 
-Proyek ini dikembangkan untuk memenuhi Ujian Akhir Semester (UAS) mata kuliah **Pemrograman Frontend**.
+Proyek ini dibuat untuk menyelesaikan Mini Project Coding Camp oleh **RevoU**, bulan Juli 2025.
 
 **Pengembang**:  
 🧑‍💻 *Fatiya Labibah*  
-🎓  *Coding Camp RevoU - 21 Jul 25*  
+🎓 *NIM 0110223060*  
+🏫 *STT Terpadu Nurul Fikri*  
+📅 *Tahun Akademik 2025*
