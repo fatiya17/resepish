@@ -95,9 +95,9 @@ Menampilkan detail resep secara lengkap berdasarkan ID resep.
 ## 🧪 Status Pengembangan
 | Fitur               | Status | Keterangan                                                  |
 |---------------------|--------|-------------------------------------------------------------|
-| 🔍 Pencarian        | ✅    | Sudah berjalan real-time berbasis keyword                   |
-| 📋 Detail Resep     | ✅    | Menampilkan semua informasi lengkap dari Supabase           |
-| 🧾 Tambah Resep     | ✅    | Upload + preview + menyimpan ke database secara realtime    |
+| 🔍 Filter           | ✅    | Sudah berjalan real-time berbasis keyword                   |
+| ✏️ Edit Tugas       | ✅    | Edit teks dan tanggal tugas                                 |
+| ➕ Tambah Tugas     | ✅    | Upload + preview + menyimpan ke database secara realtime    |
 | 🛡️ Validasi Form    | ✅    | Validasi dasar tersedia, namun belum semua bersifat wajib   |
 
 ## 👩‍💻 Tentang Pengembang
@@ -106,6 +106,4 @@ Proyek ini dikembangkan untuk memenuhi Ujian Akhir Semester (UAS) mata kuliah **
 
 **Pengembang**:  
 🧑‍💻 *Fatiya Labibah*  
-🎓 *NIM 0110223060*  
-🏫 *STT Terpadu Nurul Fikri*  
-📅 *Tahun Akademik 2025*
+🎓  *Coding Camp RevoU - 21 Jul 25*  
